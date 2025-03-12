@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="text">Dyan</h1>
+
+<button type="button" onclick='document.getElementById("text").innerHTML = "Bryan"'>change text</button>
+
+<div id="bgcolor">
+    <h1>Dyan Bryan</h1>
+</div>
+
+<button type="button" onclick='document.getElementById("bgcolor").style.backgroundColor = "green"'>change color</button>
+
+<script>
+function myfunction() {
+    const newItem = document.createElement('li');
+    newItem.textContent = 'Bryan';
+    document.getElementById("add-to-list").appendChild(newItem);
+    }
+</script>
+
+<h1>List</h1>
+
+<ul id="add-to-list">
+    <li>Dyan</li>
+    <li>Bryan</li>
+    <li>Dyan Bryan</li>
+</ul> 
+
+<button type="button" onclick="myfunction()">add to list</button>
+
+</body>
+</html>

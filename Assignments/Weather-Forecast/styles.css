@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to right, #47BFDF, #4A91FF);
+    font-size: 16px;
+}
+header {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.search-container input {
+    padding: 10px;
+    font-size: 18px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    text-align: center;
+}
+.search-container button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 18px;
+    background-color: #FA8D67;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.search-container button:hover {
+    background-color: #f1865b;
+    transform: translateY(-3px);
+}
+
+.weather-card {
+    background: #eaff009c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 600px;
+}
+.weather-card h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.weather-info img {
+    width: 80px;
+    height: 80px;
+}
+.temp-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+}
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 600px;
+}
+.forecast-card {
+    background: #eaff009c;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100px;
+}
+.forecast-card img {
+    width: 50px;
+    height: 50px;
+}
+.forecast-card .day {
+    font-size: 16px;
+    font-weight: bold;
+}
+.forecast-card p {
+    margin-top: 5px;
+    font-size: 14px;
+}

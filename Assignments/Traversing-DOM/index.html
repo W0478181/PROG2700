@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Traversal Lab</title>
+    <style>
+        .clue { color: blue; }
+        #treasure { padding: 10px; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome to the DOM Traversal Lab!</h1>
+        <p class="clue">Clue 1: Find the treasure!</p>
+        <p class="clue">Clue 2: Look for the hidden message.</p>
+        <div id="treasure">You found the treasure!</div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <script>
+        var treasure = document.getElementById('treasure');
+        treasure.style.backgroundColor = 'yellow';
+    </script>
+    <script>
+        var clues = document.getElementsByClassName('clue');
+        for (var i = 0; i < clues.length; i++) {
+            clues[i].textContent = 'Clue ' + (i + 1) + ': Updated text!';
+        }
+    </script>
+    <script>
+        var treasureParent = treasure.parentNode;
+        treasureParent.style.border = '2px solid red';
+    </script>
+    <script>
+        var container = document.getElementById('container');
+        var firstChild = container.childNodes[1];
+        firstChild.style.fontSize = '24px';
+    </script>
+    <script>
+        var firstClue = clues[0];
+        var nextElement = firstClue.nextSibling.nextSibling; 
+        nextElement.style.display = 'none';
+    </script>
+</body>
+</html>

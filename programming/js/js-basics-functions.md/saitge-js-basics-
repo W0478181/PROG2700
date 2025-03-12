@@ -1,0 +1,21 @@
+let cart = [
+    { name: "Smartphone", quantity: 1, price: 699, category: "electronics" },
+    { name: "Jeans", quantity: 2, price: 49, category: "clothing" },
+    { name: "Apple", quantity: 5, price: 0.5, category: "groceries" }
+  ];
+
+const ages = [32, 33, 16, 40];
+const result = [];
+
+for (let i = 0; i < ages.length; i++)
+{
+    if (checkAdult(ages[i])) {
+        result.push(ages[i]);
+        console.log(`People over 18: ${ages[i]}`);
+    }
+}
+
+function checkAdult(age) {
+    return age >= 18;
+}
+console.log(cart);
