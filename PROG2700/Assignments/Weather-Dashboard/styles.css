@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to right, #47BFDF, #4A91FF);
+    font-size: 16px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.main-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #044FA3;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 10px;
+}
+
+.info-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background:  #84A9D2;;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 10px;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.search-container input {
+    padding: 10px;
+    font-size: 18px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    text-align: center;
+}
+.search-container button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 18px;
+    background-color: #67DC80;;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.search-container button:hover {
+    background-color: #82C3FF;
+    transform: translateY(-3px);
+}
+
+input {
+    padding: 8px;
+    width: 70%;
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
+}
+
+#weatherInfo {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#searchHistory, #favorites {
+    list-style: none;
+    padding: 0;
+}
+
+#searchHistory li, #favorites li {
+    background: #ddd;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#searchHistory li:hover, #favorites li:hover {
+    background-color: #82C3FF;
+    transform: translateY(-3px);
+}
+
+
+#favorites {
+    margin-top: 20px;
+}
+
+#favorites h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    color: #fff;
+}
+
+#favorites li {
+    background: #ddd; 
+}
+
+#favorites li:hover {
+    background-color: #82C3FF;; 
+}
+
+button#addToFavorites {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f1865b;;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+button#addToFavorites:hover {
+    background-color: #82C3FF;
+    transform: translateY(-3px);
+}

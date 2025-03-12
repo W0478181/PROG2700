@@ -1,0 +1,201 @@
+Here’s a summary of the **JavaScript skills** required for the exercises, including the relevant **functions, methods, and properties**:
+
+---
+
+### **1. Basic Array Manipulation**
+   - **Skills**: Understanding how to create, access, and modify arrays in JavaScript.
+   - **Functions/Methods**:
+     - **Array creation**: `let array = [value1, value2, value3];`
+     - **Accessing elements**: `array[index]`
+     - **Modifying elements**: `array[index] = newValue;`
+
+---
+
+### **2. Loops and Iteration**
+   - **Skills**: Designing loops to iterate through arrays or other data structures.
+   - **Functions/Methods**:
+     - **For loop**: `for (let i = 0; i < array.length; i++) { }`
+     - **for...of loop**: `for (let item of array) { }`
+     - **forEach()**: `array.forEach(function(item, index) { });`
+
+---
+
+### **3. Array Methods for Data Transformation**
+   - **Skills**: Using built-in array methods to manipulate and transform data.
+   - **Functions/Methods**:
+     - **map()**: Transforms each element in an array:  
+       `let newArray = array.map(item => item * 2);`
+     - **filter()**: Creates a new array with elements that pass a condition:  
+       `let evenNumbers = array.filter(item => item % 2 === 0);`
+     - **reduce()**: Reduces the array to a single value:  
+       `let sum = array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);`
+     - **sort()**: Sorts elements of an array (alphabetically for strings, numerically for numbers):  
+       `let sortedArray = array.sort();`
+     - **splice()**: Adds/removes elements from an array at a specific position:  
+       `array.splice(index, numberOfItemsToRemove, itemToAdd);`
+     - **push()**: Adds an element to the end of an array:  
+       `array.push(value);`
+     - **pop()**: Removes the last element from an array:  
+       `let removedElement = array.pop();`
+     - **shift()**: Removes the first element from an array:  
+       `let removedElement = array.shift();`
+     - **unshift()**: Adds one or more elements to the beginning of an array:  
+       `array.unshift(value);`
+
+---
+
+### **4. Conditional Logic**
+   - **Skills**: Implementing conditional statements to control program flow.
+   - **Functions/Methods**:
+     - **if/else statements**:  
+       ```javascript
+       if (condition) { 
+         // do something 
+       } else { 
+         // do something else 
+       }
+       ```
+     - **ternary operator**: A shorthand for `if/else`:  
+       `let result = condition ? valueIfTrue : valueIfFalse;`
+
+---
+
+### **5. User Input**
+   - **Skills**: Prompting for and handling user input in JavaScript.
+   - **Functions/Methods**:
+     - **prompt()**: Prompts the user for input and returns a string:  
+       `let userInput = prompt("Enter a number:");`
+     - **parseInt()**: Converts a string to an integer:  
+       `let num = parseInt(userInput);`
+     - **parseFloat()**: Converts a string to a floating-point number:  
+       `let num = parseFloat(userInput);`
+     - **alert()**: Displays a message in a popup window:  
+       `alert("This is a message");`
+
+---
+
+### **6. String Manipulation**
+   - **Skills**: Modifying and manipulating strings.
+   - **Functions/Methods**:
+     - **concat()**: Concatenates two or more strings:  
+       `let newString = str1.concat(str2);`
+     - **slice()**: Extracts a section of a string:  
+       `let slicedString = str.slice(startIndex, endIndex);`
+     - **toLowerCase()**: Converts a string to lowercase:  
+       `let lowerStr = str.toLowerCase();`
+     - **toUpperCase()**: Converts a string to uppercase:  
+       `let upperStr = str.toUpperCase();`
+     - **includes()**: Checks if a string contains a certain substring:  
+       `let contains = str.includes("substring");`
+
+---
+
+### **7. Debugging Techniques**
+   - **Skills**: Using debugging tools and techniques to identify issues in the code.
+   - **Tools/Techniques**:
+     - **console.log()**: Displays values for debugging purposes:  
+       `console.log(value);`
+     - **Breakpoints in IDEs**: Setting breakpoints to stop code execution and inspect values at certain points.
+     - **Error handling**: Using `try/catch` to handle exceptions:  
+       ```javascript
+       try { 
+         // code that might throw an error 
+       } catch (error) { 
+         console.log("Error:", error); 
+       }
+       ```
+
+---
+
+### **8. Working with Functions**
+   - **Skills**: Creating reusable, modular code using functions.
+   - **Functions/Methods**:
+     - **Defining a function**:  
+       ```javascript
+       function functionName(parameters) {
+         // code to execute
+       }
+       ```
+     - **Returning values from a function**:  
+       ```javascript
+       function add(a, b) { 
+         return a + b; 
+       }
+       ```
+     - **Arrow functions**: Shortened function syntax:  
+       `const add = (a, b) => a + b;`
+
+---
+
+### **9. Array Data Structures**
+   - **Skills**: Storing and manipulating data within arrays.
+   - **Functions/Methods**:
+     - **Accessing array elements**:  
+       `let item = array[index];`
+     - **Iterating over arrays**:  
+       `array.forEach(item => { console.log(item); });`
+     - **Checking array length**:  
+       `let arrayLength = array.length;`
+     - **Finding an index of an element**:  
+       `let index = array.indexOf(value);`
+     - **Checking if a value is in an array**:  
+       `let isPresent = array.includes(value);`
+
+---
+
+### **10. Working with Arrays in Complex Scenarios**
+   - **Skills**: Understanding how to combine arrays and perform more complex manipulations.
+   - **Functions/Methods**:
+     - **concat()**: Merges two or more arrays:  
+       `let newArray = array1.concat(array2);`
+     - **join()**: Joins all elements of an array into a string:  
+       `let str = array.join(", ");`
+     - **slice()**: Creates a shallow copy of a portion of an array:  
+       `let newArray = array.slice(start, end);`
+     - **sort()**: Sorts an array in place:  
+       `let sortedArray = array.sort();`
+
+---
+
+### **11. Array Destructuring**
+   - **Skills**: Extracting multiple values from arrays and objects.
+   - **Functions/Methods**:
+     - **Destructuring assignment**:  
+       ```javascript
+       let [first, second] = array;
+       ```
+
+---
+
+### **12. Working with Numbers**
+   - **Skills**: Performing mathematical operations and parsing numbers.
+   - **Functions/Methods**:
+     - **Math methods**: `Math.round()`, `Math.floor()`, `Math.ceil()`, `Math.random()`, `Math.max()`, `Math.min()`
+     - **parseInt()**: Converts a string to an integer:  
+       `let num = parseInt("123");`
+     - **parseFloat()**: Converts a string to a floating-point number:  
+       `let num = parseFloat("123.45");`
+
+---
+
+### **13. Prompting and Handling User Input**
+   - **Skills**: Collecting and processing user input dynamically.
+   - **Functions/Methods**:
+     - **prompt()**: Requests user input via a dialog box.  
+       `let name = prompt("Enter your name:");`
+     - **parseInt()**: Converts user input into a number for mathematical operations.  
+       `let age = parseInt(prompt("Enter your age:"));`
+
+---
+
+### **14. Data Validation**
+   - **Skills**: Ensuring user input is correct and handling errors gracefully.
+   - **Functions/Methods**:
+     - **isNaN()**: Checks if a value is not a number:  
+       `if (isNaN(input)) { // handle error }`
+     - **typeof**: Checks the type of a value:  
+       `if (typeof input === "number") { // valid number }`
+
+---
+
+This summary includes the essential **JavaScript skills** and **methods** used throughout the exercises. Mastery of these concepts will enable students to write effective and efficient JavaScript code for manipulating arrays, handling user input, and implementing loops, conditions, and functions in web applications.
